@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "defines": [
+                "ARDUINO=10800",
+                "USBCON"
+            ],
+            "includePath": [
+                "${workspaceRoot}",
+                "/Users/takumi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.4/**",
+                "/Applications/Arduino.app/Contents/Java/libraries/**",
+                "/Users/takumi/Documents/Arduino/libraries/**",
+                "/Users/takumi/Library/Arduino15/packages/esp32/tools/**",
+                "/Applications/Arduino.app/hardware/tools/**",
+                "/Applications/Arduino.app/libraries/**",
+                "/Users/takumi/Documents/Arduino/hardware/tools/**",
+                "/Users/takumi/Documents/Arduino/libraries/**"
+            ],
+            "forcedInclude": [],
+            "intelliSenseMode": "clang-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "compilerPath": "/usr/local/bin/gcc-10"
+        }
+    ],
+    "version": 4
+}

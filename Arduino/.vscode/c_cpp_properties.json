@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/Users/takumi/Library/Arduino15/packages/esp32/tools/**",
+                "/Users/takumi/Documents/Arduino/libraries/**",
+                "/Applications/Arduino.app/Contents/Java/libraries/**",
+                "/Users/takumi/Library/Arduino15/packages/esp32/hardware/esp32/1.0.4/**"
+            ],
+            "forcedInclude": [],
+            "defines": [
+                "USBCON"
+            ],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "/usr/local/bin/gcc-10",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14"
+        },
+        {
+            "name": "AVR",
+            "intelliSenseMode": "${default}",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "compilerPath": "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++",
+            "includePath": [
+                "/Users/takumi/Dropbox/Programing/ElectoricSystem/AVR/lib/**"
+            ],
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                "-DF_CPU=8000000UL"
+            ]
+        }
+    ],
+    "version": 4
+}
