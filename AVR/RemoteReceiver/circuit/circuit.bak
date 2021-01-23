@@ -1,0 +1,124 @@
+EESchema Schematic File Version 4
+LIBS:circuit-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328-PU U?
+U 1 1 5F2D2512
+P 2950 3000
+F 0 "U?" H 2306 3046 50  0000 R CNN
+F 1 "ATmega328-PU" H 2306 2955 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 2950 3000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 2950 3000 50  0001 C CNN
+	1    2950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L (git)nosuzu:PL-IRM0101 IRM?
+U 1 1 5F2D468F
+P 5050 2300
+F 0 "IRM?" H 5278 2323 60  0000 L CNN
+F 1 "PL-IRM0101" H 5278 2217 60  0000 L CNN
+F 2 "nosuz:PL-IRM0101" H 5278 2111 60  0000 L CNN
+F 3 "" H 5050 2450 60  0000 C CNN
+	1    5050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2D6DD6
+P 2950 4500
+F 0 "#PWR?" H 2950 4250 50  0001 C CNN
+F 1 "GND" H 2955 4327 50  0000 C CNN
+F 2 "" H 2950 4500 50  0001 C CNN
+F 3 "" H 2950 4500 50  0001 C CNN
+	1    2950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5F2D7C88
+P 2950 1500
+F 0 "#PWR?" H 2950 1350 50  0001 C CNN
+F 1 "VCC" H 2967 1673 50  0000 C CNN
+F 2 "" H 2950 1500 50  0001 C CNN
+F 3 "" H 2950 1500 50  0001 C CNN
+	1    2950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5F2D9D23
+P 1100 2550
+F 0 "#PWR?" H 1100 2400 50  0001 C CNN
+F 1 "VCC" H 1117 2723 50  0000 C CNN
+F 2 "" H 1100 2550 50  0001 C CNN
+F 3 "" H 1100 2550 50  0001 C CNN
+	1    1100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5F2D9F31
+P 1100 2750
+F 0 "BT?" H 1218 2846 50  0000 L CNN
+F 1 "Battery_Cell" H 1218 2755 50  0000 L CNN
+F 2 "my_library:v_dip" V 1100 2810 50  0001 C CNN
+F 3 "~" V 1100 2810 50  0001 C CNN
+	1    1100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2DBAE0
+P 1100 2850
+F 0 "#PWR?" H 1100 2600 50  0001 C CNN
+F 1 "GND" H 1105 2677 50  0000 C CNN
+F 2 "" H 1100 2850 50  0001 C CNN
+F 3 "" H 1100 2850 50  0001 C CNN
+	1    1100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2700 5350 2700
+Wire Wire Line
+	5350 2700 5350 1700
+$Comp
+L power:VCC #PWR?
+U 1 1 5F2DC62F
+P 5350 1700
+F 0 "#PWR?" H 5350 1550 50  0001 C CNN
+F 1 "VCC" H 5367 1873 50  0000 C CNN
+F 2 "" H 5350 1700 50  0001 C CNN
+F 3 "" H 5350 1700 50  0001 C CNN
+	1    5350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2DCCB6
+P 5050 3200
+F 0 "#PWR?" H 5050 2950 50  0001 C CNN
+F 1 "GND" H 5055 3027 50  0000 C CNN
+F 2 "" H 5050 3200 50  0001 C CNN
+F 3 "" H 5050 3200 50  0001 C CNN
+	1    5050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2700 5050 3200
+Wire Wire Line
+	4950 2700 3550 2700
+$EndSCHEMATC

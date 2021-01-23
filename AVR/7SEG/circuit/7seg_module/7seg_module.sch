@@ -1,0 +1,202 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 4750 1950
+Wire Wire Line
+	3800 1650 3800 2850
+Wire Wire Line
+	5350 1650 3800 1650
+$Comp
+L Connector_Generic:Conn_01x07 J1
+U 1 1 5EFA8F38
+P 6150 3950
+F 0 "J1" H 6230 3992 50  0000 L CNN
+F 1 "Conn_01x07" H 6230 3901 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Horizontal" H 6150 3950 50  0001 C CNN
+F 3 "~" H 6150 3950 50  0001 C CNN
+	1    6150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7seg_module-rescue:ATmega328P-PU-MCU_Microchip_ATmega U2
+U 1 1 5EF53812
+P 5350 3150
+F 0 "U2" H 4706 3196 50  0000 R CNN
+F 1 "ATmega328P-PU" H 4706 3105 50  0000 R CNN
+F 2 "ATMEGA328-PU:DIL28" H 5350 3150 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5350 3150 50  0001 C CNN
+	1    5350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 1300 10850 3200
+Wire Wire Line
+	5950 2550 7050 2550
+$Comp
+L Device:R R0
+U 1 1 5F00FC51
+P 7050 3200
+F 0 "R0" V 7150 3200 50  0000 L CNN
+F 1 "100" V 7150 3050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 6980 3200 50  0001 C CNN
+F 3 "~" H 7050 3200 50  0001 C CNN
+	1    7050 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 1950 7050 1950
+$Comp
+L Display_Character:DC56-11GWA U1
+U 1 1 5EF7668B
+P 7650 2350
+F 0 "U1" H 7650 3017 50  0000 C CNN
+F 1 "DC56-11GWA" H 7650 2926 50  0000 C CNN
+F 2 "Display_7Segment:DA56-11CGKWA" H 7670 1700 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/DC56-11GWA.pdf" H 7530 2450 50  0001 C CNN
+	1    7650 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2350 7050 2350
+Wire Wire Line
+	5950 2450 7050 2450
+Wire Wire Line
+	5950 2250 7050 2250
+Wire Wire Line
+	5950 2150 7050 2150
+Wire Wire Line
+	5950 2050 7050 2050
+Wire Wire Line
+	7050 1950 8250 1950
+Connection ~ 7050 1950
+Wire Wire Line
+	7050 2050 8250 2050
+Connection ~ 7050 2050
+Wire Wire Line
+	7050 2150 8250 2150
+Connection ~ 7050 2150
+Wire Wire Line
+	7050 2250 8250 2250
+Connection ~ 7050 2250
+Wire Wire Line
+	7050 2350 8250 2350
+Connection ~ 7050 2350
+Wire Wire Line
+	8250 2450 7050 2450
+Connection ~ 7050 2450
+Wire Wire Line
+	7050 2550 8250 2550
+Connection ~ 7050 2550
+$Comp
+L Device:Q_NPN_ECB Q1
+U 1 1 5EF955C5
+P 6950 3550
+F 0 "Q1" H 7141 3596 50  0000 L CNN
+F 1 "Q_NPN_ECB" H 7141 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 7150 3650 50  0001 C CNN
+F 3 "~" H 6950 3550 50  0001 C CNN
+	1    6950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_ECB Q2
+U 1 1 5EF97C72
+P 8150 3550
+F 0 "Q2" H 8341 3596 50  0000 L CNN
+F 1 "Q_NPN_ECB" H 8341 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8350 3650 50  0001 C CNN
+F 3 "~" H 8150 3550 50  0001 C CNN
+	1    8150 3550
+	1    0    0    -1  
+$EndComp
+Text Notes 7300 3450 0    50   ~ 0
+\nfoot print of\ntransister  is inverse\n
+Wire Wire Line
+	7050 2750 7050 3050
+Wire Wire Line
+	8250 2750 8250 3050
+Wire Wire Line
+	7050 3750 7700 3750
+$Comp
+L Device:R R3
+U 1 1 5EF9E10D
+P 8250 3200
+F 0 "R3" V 8350 3200 50  0000 L CNN
+F 1 "100" V 8350 3050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8180 3200 50  0001 C CNN
+F 3 "~" H 8250 3200 50  0001 C CNN
+	1    8250 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 3750 7700 4650
+Wire Wire Line
+	7700 4650 5350 4650
+Connection ~ 7700 3750
+Wire Wire Line
+	7700 3750 8250 3750
+Wire Wire Line
+	3800 3150 3800 4650
+Wire Wire Line
+	3800 4650 5350 4650
+Connection ~ 5350 4650
+$Comp
+L Device:R R2
+U 1 1 5EF9F2E1
+P 6600 3550
+F 0 "R2" V 6600 3500 50  0000 L CNN
+F 1 "1000" V 6700 3400 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 6530 3550 50  0001 C CNN
+F 3 "~" H 6600 3550 50  0001 C CNN
+	1    6600 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2950 6450 2950
+Wire Wire Line
+	6450 2950 6450 3550
+$Comp
+L Device:R R1
+U 1 1 5EFA09ED
+P 6600 2850
+F 0 "R1" V 6600 2800 50  0000 L CNN
+F 1 "1000" V 6700 2700 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 6530 2850 50  0001 C CNN
+F 3 "~" H 6600 2850 50  0001 C CNN
+	1    6600 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 2850 5950 2850
+Wire Wire Line
+	6750 2850 6850 2850
+Wire Wire Line
+	6850 2850 6850 2950
+Wire Wire Line
+	6850 2950 7950 2950
+Wire Wire Line
+	7950 2950 7950 3550
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5EF7BACF
+P 3800 3050
+F 0 "BT1" H 3918 3146 50  0000 L CNN
+F 1 "Battery_Cell" H 3918 3055 50  0000 L CNN
+F 2 "my_library:v_dip" V 3800 3110 50  0001 C CNN
+F 3 "~" V 3800 3110 50  0001 C CNN
+	1    3800 3050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
